@@ -1,0 +1,37 @@
+{
+  "name": "node-mysql",
+  "version": "1.0.0",
+  "description": "node.js and mysql crud app",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DineshBabu1989/Node-MySql.git"
+  },
+  "keywords": [
+    "node.js",
+    "mySql",
+    "react"
+  ],
+  "author": "Dinesh Babu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DineshBabu1989/Node-MySql/issues"
+  },
+  "homepage": "https://github.com/DineshBabu1989/Node-MySql#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.0",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
